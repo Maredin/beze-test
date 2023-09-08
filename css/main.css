@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.flex {
+    display: flex;
+}
+.sb {
+    justify-content: space-between;
+}
+.center {
+    margin: 0 auto;
+}
+
+
+body {
+    background-color: #F3EAFF;
+}
+
+.organization {
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+    width: 770px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.organization__header-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.organization__add {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.organization__add-discr {
+    font-size: 16px;
+    font-weight: 400;
+}
+.organization__add-btn, .file__add-btn {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    background: #E8F2FE;
+    cursor: pointer;
+    width: 106px;
+}
+.organization__add-btn p, .file__add-btn p {
+    color:#045CC4;
+    font-size: 14px;
+}
+.organization__add-btn:hover, .file__add-btn:hover {
+    background: #c0dcff;
+}
+
+.organization__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.organization__cancel-btn, .organization__edit-btn {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    background: #EDEDED;
+    cursor: pointer;
+}
+.organization__cancel-btn:hover, .organization__edit-btn:hover {
+    background: #d6d5d5;
+}
+.organization__cancel-btn p, .organization__edit-btn p {
+    color: #353535;
+    text-align: center;
+    font-size: 14px;
+}
+
+.form, .formSave {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.form__lable {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.form__star {
+    color: red;
+}
+.form__select {
+    color: #656565;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #C8C8C8;
+    background :#FFF;
+}
+.form__desct-placeholder {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 400;
+}
+.drop__zone {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px dashed #C8C8C8;
+    background:#FFF;
+    min-height: 138px;
+}
+.drop__zone-active {
+    border-color:#00ff62;
+    background: #e0ffec;
+}
+.drop__zone-title {
+    color: #353535;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.drop__zone-descr {
+    color:#656565;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.file__add-btn {
+    margin-top: 16px;
+}
+.file__add-input {
+    visibility: hidden;
+    position: absolute;
+}
+.file__add-wrapper {
+    width: 100%;
+}
+.file__add-logo {
+    min-width: 180px;
+    max-width: 280px;
+    min-height: 180px;
+    max-height: 180px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+}
+.form__btn-save {
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: #1588C9;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 14px;
+}
+.form__btn-save:hover {
+    background: #136ea3;
+}
+
+.formSave__lable {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.formSave__select {
+    color: #353535;
+    font-size: 16px;
+    line-height: 24px; 
+}
+.file__add-error {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+.corp__edit  {
+    display: none;
+}
