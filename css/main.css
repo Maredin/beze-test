@@ -163,9 +163,7 @@ body {
     width: 100%;
 }
 .file__add-logo {
-    min-width: 180px;
     max-width: 280px;
-    min-height: 180px;
     max-height: 180px;
     padding: 8px;
     border-radius: 8px;
